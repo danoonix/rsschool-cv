@@ -1,7 +1,5 @@
 # **Daria Trubnikova**
 
-*****
-
 ## **Contacts:**
 
 * Discord: *Danoonix#2209*
