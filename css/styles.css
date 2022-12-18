@@ -482,4 +482,85 @@ body, html {
   -webkit-transition: 0.7s;
   transition: 0.7s;
 }
+
+.contacts {
+  padding-top: 0;
+}
+
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contacts__link-image {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center center;
+  background-size: contain;
+  margin-right: 5px;
+  background-color: transparent;
+}
+
+.contacts__link-image--location {
+  background-image: url("../img/location-icon.svg");
+}
+
+.contacts__link-image--email {
+  background-image: url("../img/email-icon.svg");
+}
+
+.contacts__link-image--discord {
+  background-image: url("../img/discord-icon.svg");
+}
+
+.contacts__link-image--github {
+  background-image: url("../img/github-icon.svg");
+}
 /*# sourceMappingURL=styles.css.map */

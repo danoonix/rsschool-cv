@@ -1,0 +1,32 @@
+.contacts
+  padding-top: 0
+  &__wrapper
+    +flex(column, center, center, wrap)
+  &__list
+    +margin-zero
+    +padding-zero
+  &__item
+    list-style: none
+    +flex(row, center, center, no-wrap)
+    &:not(:last-child)
+      margin-bottom: 10px
+  &__link
+    text-decoration: none
+    color: inherit
+    &-image
+      display: block
+      width: 24px
+      height: 24px
+      background-position: center center
+      background-size: contain
+      margin-right: 5px
+      background-color: transparent
+      &--location
+        background-image: url("../img/location-icon.svg")
+      &--email
+        background-image: url("../img/email-icon.svg")
+      &--discord
+        background-image: url("../img/discord-icon.svg")
+      &--github
+        background-image: url("../img/github-icon.svg")
+
