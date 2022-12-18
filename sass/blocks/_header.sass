@@ -1,0 +1,22 @@
+.header
+  color: $text-gray
+  &__wrapper
+.navigation
+  &__list
+    +padding-zero
+    +margin-zero
+    +flex(row, space-between, center, wrap)
+  &__item
+    +padding-zero
+    +margin-zero
+    +flex(row, center, center, no-wrap)
+    min-height: 90px
+    width: auto
+    list-style: none
+  &__link
+    text-decoration: none
+    color: inherit
+    +transition(0.7s)
+    &:hover
+      color: $text-dark
+      +transition(0.7s)

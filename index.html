@@ -4,10 +4,211 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
   <title>Daria Trubnikova's CV</title>
 </head>
 <body>
-  <h1>Daria Trubnikova</h1>
+  <header class="header">
+    <div class="wrapper header__wrapper">
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#about" class="navigation__link">About me</a></li>
+          <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
+          <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+          <li class="navigation__item"><a href="#code" class="navigation__link">Code example</a></li>
+          <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+          <li class="navigation__item"><a href="#education" class="navigation__link">Education</a></li>
+          <li class="navigation__item"><a href="#english" class="navigation__link">English level</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="section about">
+      <div class="wrapper about__wrapper">
+        <div class="about__name">
+          <h1 class="about__title">Daria Trubnikova</h1>
+          <div class="about__subtitle">Junior Frontend Developer 28 years old, Moscow</div>
+        </div>
+        <div class="about__info">
+          <img src="img/chloe1.jpg" class="about__image" alt="userpic">
+          <div class="about__about-me">
+            <p class="about__text" id="about">
+              My thesis project at the university was related to programming, and since then, I have gotten into it. To my mind, front-end development is the first step for me on the path to full-stack web development.
+            </p>
+            <p class="about__text">
+              I consider diligence, the ability to learn quickly and possession of time management skills as my main personal qualities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills section">
+      <div class="wrapper skills__wrapper">
+        <h2 class="skills__title title" id="skills">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item skills-item">
+            <img src="img/html5logo.svg" alt="html5" class="skills__image" width="90">
+            <span class="skills__subtitle">HTML5</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--html"></div>
+            </div>
+          </li>
+          <li class="skills__item skills-item">
+            <img src="img/csslogo.svg" alt="css3" class="skills__image" width="90">
+            <span class="skills__subtitle">CSS3</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--css"></div>
+            </div>
+          </li>
+          <li class="skills__item skills-item">
+            <img src="img/gitlogo.svg" alt="git" class="skills__image" width="90">
+            <span class="skills__subtitle">GIT</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--git"></div>
+            </div>
+          </li>
+          <li class="skills__item skills-item">
+            <img src="img/jslogo.svg" alt="javascript" class="skills__image" width="90">
+            <span class="skills__subtitle">JavaScript</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--js"></div>
+            </div>
+          </li>
+          <li class="skills__item skills-item">
+            <img src="img/sasslogo.svg" alt="sass" class="skills__image" width="90">
+            <span class="skills__subtitle">SCSS/SASS</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--sass"></div>
+            </div>
+          </li>
+          <li class="skills__item skills-item">
+            <img src="img/photoshop.svg" alt="photoshop" class="skills__image" width="90">
+            <span class="skills__subtitle">Photoshop</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--photoshop"></div>
+            </div>
+          </li>
+          <li class="skills__item skills-item">
+            <img src="img/figma.svg" alt="figma" class="skills__image" width="90">
+            <span class="skills__subtitle">Figma</span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--figma"></div>
+            </div>
+          </li>
+        </ul>
+        <section class="english">
+          <h3 class="english__title" id="english">English</h3>
+          <div class="skills__item">
+            <img src="img/english.svg" alt="english" class="skills__image" width="90">
+            <span class="skills__subtitle">
+              I have passed IELTS Academic English with 5.5 score, which is the border between B1 and B2 English levels.
+            </span>
+            <div class="skills__range">
+              <div class="skills__level skills__level--english"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section class="section code">
+      <div class="wrapper code__wrapper">
+        <h2 class="title code__title" id="code">Code example</h2>
+        <p class="code__text">
+          Code examples can be seen in my <a href="https://github.com/danoonix" class="code__link">GitHub account</a> or you can see my FizzBuzz solving below:
+        </p>
+        <pre class="code__example"><code  data-language="javascript">
+function fizzbuzz(n) {
+  let result = [];
+  for (let i = 0; i &lt; n; i++) {
+    result.push(i + 1);
+    if((result[i] % 3 === 0) &&
+      (result[i] % 5 === 0)) {
+        result[i] = 'FizzBuzz';
+    }
+    if(result[i] % 3 === 0) {
+      result[i] = 'Fizz';
+    }
+    if(result[i] % 5 === 0) {
+      result[i] = 'Buzz';
+    }
+  }
+  return result;
+}
+      </code></pre>
+    </div>
+    </section>
+    <section class="section education">
+      <div class="wrapper education__wrapper">
+        <h2 class="title education__title" id="education">Education</h2>
+        <ul class="education__list">
+          <li class="education__item">
+            <h3 class="education__title-item">National University of Science and Technology «MISIS»</h3>
+            <span class="education__subtitle">Bachelor of IT & Automated Control Systems</span>
+            <span class="education__time">2015-2019</span>
+          </li>
+          <li class="education__item">
+            <h3 class="education__title-item">Rolling Scopes School</h3>
+            <span class="education__subtitle">Javascript/Front-end</span>
+            <span class="education__time">2022-...</span>
+          </li>
+          <li class="education__item">
+            <h3 class="education__title-item">«WEB-developer 2022»</h3>
+            <span class="education__subtitle">Udemy course by Ivan Petrychenko</span>
+            <span class="education__time">2022-...</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section projects">
+      <div class="wrapper projects__wrapper">
+        <h2 class="title projects__title" id="projects">Projects</h2>
+        <article class="project">
+          <img src="img/cv.png" alt="cv-pic" class="project__image">
+          <div class="project__info">
+            <h4 class="project__title">CV project</h4>
+            <p class="project__text">An educational project created with HTML and CSS Preprocessors(SASS/SCSS)
+            </p>
+            <a href="https://danoonix.github.io/rsschool-cv/" class="project__link" target="_blank">Deploy</a>
+            <a href="https://github.com/danoonix/rsschool-cv/tree/gh-pages" class="project__link" target="_blank">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section contacts">
+      <div class="wrapper contacts__wrapper">
+        <h2 class="title contacts__title" id="contacts">
+          Contacts
+        </h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__link-image contacts__link-image--discord"></span>
+            <span class="contacts__link">Danoonix#2209</span>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:danoonix@gmail.com" class="contacts__link-image contacts__link-image--email"></a>
+            <a href="mailto:danoonix@gmail.com" class="contacts__link">danoonix@gmail.com</a>
+          </li>
+          <li class="contacts__item">
+            <a href="https://github.com/danoonix" class="contacts__link-image contacts__link-image--github"></a>
+            <a href="https://github.com/danoonix" class="contacts__link">danoonix</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__link-image contacts__link-image--location"></span>
+            <span class="contacts__link">Moscow, Russia</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <a class="footer__github" target="_blank" href="https://github.com/danoonix">Github</a>
+      <a class="footer__rss" target="_blank" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+      <span class="footer__copyright">© 2022</span>
+    </div>
+  </footer>
+<script src="js/rainbow-custom.min.js"></script>
 </body>
 </html>
