@@ -1,0 +1,54 @@
+.projects
+  &__wrapper
+    +flex(column, center, center, wrap)
+
+
+.project
+  width: 70%
+  position: relative
+  overflow-x: hidden
+  overflow-y: hidden
+  box-sizing: content-box
+  &__image
+    margin-bottom: 10px
+    box-shadow: 10px 10px $text-dark
+    border: 1px solid $text-dark
+    width: 100%
+  &__info
+    padding-top: 40px
+    padding-bottom: 40px
+    position: absolute
+    top: 0
+    +flex(column, space-around, center, wrap)
+    width: 100%
+    height: 60% // 96%
+    background-color: $text-gray
+    transform: translateX(200%) translateY(-200%)
+    opacity: 0.99
+    +transition(0.7s)
+  &__title
+    +margin-zero()
+    +padding-zero()
+    font-size: 32px
+    text-transform: uppercase
+  &__text
+    width: 70%
+    text-align: center
+  &__link
+    text-decoration: none
+    color: $white-bg-color
+    border: 3px solid $white-bg-color
+    padding-right: 8px
+    padding-left: 8px
+    padding-top: 5px
+    padding-bottom: 5px
+    +transition(0.7s)
+    &:hover
+      background-color: $white-bg-color
+      border-color: $text-dark
+      color: $text-dark
+      +transition(0.7s)
+.project:hover
+  .project__info
+    transform: translateX(0) translateY(0)
+    +transition(0.7s)
