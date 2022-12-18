@@ -1,9 +1,12 @@
 .skills
   +section-gray
+  &__wrapper
+    +flex(column, center, center, wrap)
   &__list
     +margin-zero
     +padding-zero
     +flex(row, center, center, wrap)
+    margin-bottom: 30px
     gap: 60px
   &__item
     +flex(column, center, center, no-wrap)
@@ -14,6 +17,7 @@
   &__image
     margin-bottom: 16px
   &__subtitle
+    text-align: center
     margin-bottom: 16px
   &__range
     width: 80%
@@ -37,3 +41,9 @@
       width: 30%
     &--figma
       width: 45%
+    &--english
+      width: 60%
+
+.english
+  &__title
+    text-align: center
