@@ -47,7 +47,6 @@ body, html {
 }
 
 .header {
-  border-bottom: 1px solid #828282;
   color: #828282;
 }
 
@@ -108,17 +107,86 @@ body, html {
 }
 
 .about {
-  background-color: #f6f6f6;
+  padding-top: 0;
+  background-image: url("../img/Rectangle-109-1.svg");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: 50% 35%;
+}
+
+.about__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 48px;
+  max-width: 300px;
+  margin: 0;
+  padding: 0;
+  line-height: 0.9;
+}
+
+.about__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about__subtitle {
+  text-align: right;
+  font-size: 16px;
+  max-width: 210px;
+}
+
+.about__image {
+  width: 40%;
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+
+.about__about-me {
+  width: 60%;
 }
 
 .about__text {
   margin: 0 auto;
-  text-align: center;
-  max-width: 394px;
+  text-align: right;
+  max-width: 80%;
 }
 
 .about__text:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.skills {
+  background-color: #f6f6f6;
 }
 
 .skills__list {
@@ -212,10 +280,6 @@ body, html {
   width: 45%;
 }
 
-.code {
-  background-color: #f6f6f6;
-}
-
 .code__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,6 +321,10 @@ body, html {
 .code__example {
   font-size: 14px;
   background-color: transparent;
+}
+
+.education {
+  background-color: #f6f6f6;
 }
 
 .education__list {
@@ -310,5 +378,108 @@ body, html {
 .education__time {
   font-size: 16px;
   color: #828282;
+}
+
+.projects__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project {
+  width: 70%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.project__image {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 10px 10px #070707;
+          box-shadow: 10px 10px #070707;
+  border: 1px solid #070707;
+  width: 100%;
+}
+
+.project__info {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 96%;
+  background-color: #828282;
+  -webkit-transform: translateX(200%) translateY(-200%);
+          transform: translateX(200%) translateY(-200%);
+  opacity: 0.95;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.project__title {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.project__text {
+  width: 70%;
+  text-align: center;
+}
+
+.project__link {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.project__link:hover {
+  background-color: white;
+  border-color: #070707;
+  color: #070707;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.project:hover .project__info {
+  -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 /*# sourceMappingURL=styles.css.map */

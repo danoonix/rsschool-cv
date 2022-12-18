@@ -27,15 +27,24 @@
   <main>
     <section class="section about">
       <div class="wrapper about__wrapper">
-        <h2 class="title section__title" id="about">
-          About me
-        </h2>
-        <p class="about__text">
-          My thesis project at the university was related to programming, and since then, I have gotten into it. To my mind, front-end development is the first step for me on the path to full-stack web development.
-        </p>
-        <p class="about__text">
-          I consider diligence, the ability to learn quickly and possession of time management skills as my main personal qualities.
-        </p>
+        <div class="about__name">
+          <h1 class="about__title">Daria Trubnikova</h1>
+          <div class="about__subtitle">Junior Frontend Developer 28 years old, Moscow</div>
+        </div>
+        <div class="about__info">
+          <img src="img/chloe1.jpg" class="about__image" alt="userpic">
+          <div class="about__about-me">
+            <p class="about__text" id="about">
+              My thesis project at the university was related to programming, and since then, I have gotten into it. To my mind, front-end development is the first step for me on the path to full-stack web development.
+            </p>
+            <p class="about__text">
+              I consider diligence, the ability to learn quickly and possession of time management skills as my main personal qualities.
+            </p>
+            <p class="about__text" id="english">
+              I have passed IELTS Academic English with 5.5 score, which is the border between B1 and B2 English levels.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="skills section">
@@ -140,6 +149,21 @@ function fizzbuzz(n) {
             <span class="education__time">2022-...</span>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="section projects">
+      <div class="wrapper projects__wrapper">
+        <h2 class="title projects__title" id="projects">Projects</h2>
+        <article class="project">
+          <img src="img/cv.png" alt="cv-pic" class="project__image">
+          <div class="project__info">
+            <h4 class="project__title">CV project</h4>
+            <p class="project__text">An educational project created with HTML and CSS Preprocessors(SASS/SCSS)
+            </p>
+            <a href="#" class="project__link">Deploy</a>
+            <a href="#" class="project__link">Code</a>
+          </div>
+        </article>
       </div>
     </section>
   </main>
