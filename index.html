@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
   <title>Daria Trubnikova's CV</title>
 </head>
 <body>
@@ -93,6 +94,34 @@
         </ul>
       </div>
     </section>
+    <section class="section code">
+      <div class="wrapper code__wrapper">
+        <h2 class="title code__title">Code example</h2>
+        <p class="code__text">
+          Code examples can be seen in my <a href="https://github.com/danoonix" class="code__link">GitHub account</a> or you can see my FizzBuzz solving below:
+        </p>
+        <pre class="code__example"><code  data-language="javascript">
+function fizzbuzz(n) {
+  let result = [];
+  for (let i = 0; i &lt; n; i++) {
+    result.push(i + 1);
+    if((result[i] % 3 === 0) &&
+      (result[i] % 5 === 0)) {
+        result[i] = 'FizzBuzz';
+    }
+    if(result[i] % 3 === 0) {
+      result[i] = 'Fizz';
+    }
+    if(result[i] % 5 === 0) {
+      result[i] = 'Buzz';
+    }
+  }
+  return result;
+}
+</code>
+</pre>
+    </section>
   </main>
+<script src="js/rainbow-custom.min.js"></script>
 </body>
 </html>
