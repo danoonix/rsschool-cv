@@ -1,0 +1,31 @@
+body, html
+  margin: 0
+  padding: 0
+
+body
+  scroll-behavior: smooth
+
+*
+  box-sizing: border-box
+
+.wrapper
+  width: 100%
+  max-width: 960px
+  margin: 0 auto
+  overflow-x: hidden
+
+=flex($flex-direction, $justify-content, $align-items, $flex-wrap)
+  display: flex
+  flex-direction: $flex-direction
+  justify-content: $justify-content
+  align-items: $align-items
+  flex-wrap: $flex-wrap
+
+=margin-zero()
+  margin: 0
+
+=padding-zero()
+  padding: 0
+
+=transition($transition)
+  transition: $transition
